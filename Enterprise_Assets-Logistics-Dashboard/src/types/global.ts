@@ -11,3 +11,17 @@ export interface SystemContextType {
   logout: () => void;
   setDarkMode: (darkMode: boolean) => void;
 }
+
+export interface Asset {
+  id: string;
+  name: string;
+  type: "server" | "network" | "storage";
+  status: "online" | "offline";
+  ipAddress: "string";
+}
+
+export interface DashboardState {
+  assets: Asset[];
+  isLoading: boolean;
+  error: string | null;
+}
