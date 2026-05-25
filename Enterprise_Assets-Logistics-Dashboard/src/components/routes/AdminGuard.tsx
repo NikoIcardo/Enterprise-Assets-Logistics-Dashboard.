@@ -5,7 +5,7 @@ import { JSX } from "react";
 const AdminGuard = (): JSX.Element => {
   const { user } = useSystemContext();
   if (!user || user.role !== "admin") {
-    return <Navigate to="/" />;
+    return <Navigate to="/" replace />;
   }
   return <Outlet />;
 };
