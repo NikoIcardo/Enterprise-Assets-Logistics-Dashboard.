@@ -1,1 +1,14 @@
 @import "tailwindcss";
+@theme {
+  /* 1. Global theme tokens go here (flat list only) */
+  --color-page-bg: #ffffff;
+  --color-page-text: #1e293b;
+  --color-accent: #0ea5e9;
+}
+
+/* 2. Custom behavior conditional modifiers go OUTSIDE the theme block */
+.dark {
+  --color-page-bg: #0f172a;
+  --color-page-text: #f8fafc;
+  --color-accent: #38bdf8;
+}
