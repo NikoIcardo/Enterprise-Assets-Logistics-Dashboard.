@@ -1,9 +1,13 @@
-function App() {
+import './index.css'
 
+function App() {
   return (
-    <>
-      <h1>APP</h1>
-    </>
+    <div className="flex min-h-screen items-center justify-center bg-slate-900 text-white">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-sky-400">Tailwind Test</h1>
+        <p className="mt-2 text-slate-400">If this text is gray and centered on a dark background, it works!</p>
+      </div>
+    </div>
   )
 }
 
