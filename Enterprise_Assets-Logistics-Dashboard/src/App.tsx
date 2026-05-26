@@ -11,12 +11,10 @@ function App() {
       className={`min-h-screen bg-page-bg text-page-text ${darkMode ? "dark" : ""}`}
     >
       <Navbar />
-      <div
-        className={`flex min-h-[calc(100vh-65px)] items-center justify-center`}
-      >
-        <div className="mt-6">
+      <div className="flex flex-col min-h-[calc(100vh-65px)] items-stretch justify-start">
+        <main className="w-full mt-6">
           <Outlet />
-        </div>
+        </main>
       </div>
     </div>
   );

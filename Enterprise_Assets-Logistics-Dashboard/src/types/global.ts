@@ -17,7 +17,7 @@ export interface Asset {
   name: string;
   type: "server" | "network" | "storage";
   status: "online" | "offline";
-  ipAddress: "string";
+  ipAddress: string;
 }
 
 export interface DashboardState {
